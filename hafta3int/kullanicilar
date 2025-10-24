@@ -1,0 +1,15 @@
+CREATE TABLE kullanicilar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    kulad VARCHAR(50) NOT NULL UNIQUE,
+    sifre VARCHAR(255) NOT NULL, -- Şifreler her zaman hash'lenmelidir!
+    adsoyad VARCHAR(100),
+    rol ENUM('admin', 'personel', 'uye') NOT NULL,
+    eposta VARCHAR(100),
+    kayit_tarihi TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Örnek Kullanıcı Verileri
+INSERT INTO kullanicilar (kulad, sifre, rol) VALUES
+('admin', 'parola_hash_admin', 'admin'), -- Gerçek uygulamada parola hash'i kullanın
+('ahmet_p', 'parola_hash_personel', 'personel'),
+('zeynep_u', 'parola_hash_uye', 'uye');

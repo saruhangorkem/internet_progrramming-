@@ -1,0 +1,35 @@
+<html>
+<head><title>İletişim - MSB Library</title><link rel="stylesheet" href="css/genel.css"></head>
+<body class="body"><center><div id="container">
+  <div id="header"><div id="logo"></div></div>
+  <nav>
+    <a href="index.html">Ana Sayfa</a><a href="hakkimizda.html">Hakkımızda</a>
+    <a href="misyon.html">Misyon</a><a href="vizyon.html">Vizyon</a>
+    <a href="iletisim.html">İletişim</a><a href="login.html">Giriş</a>
+  </nav>
+  <div id="content">
+    <h1>İletişim</h1>
+    <div class="form-card">
+      <form method="post" action="backend/iletisim_gonder.php">
+        <div class="form-row">
+          <label>Ad Soyad</label>
+          <input name="adsoyad" required>
+        </div>
+        <div class="form-row">
+          <label>E-posta</label>
+          <input type="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label>Telefon</label>
+          <input name="telefon">
+        </div>
+        <div class="form-row">
+          <label>Mesaj</label>
+          <textarea name="mesaj" rows="5" required></textarea>
+        </div>
+        <button type="submit">Gönder</button>
+      </form>
+    </div>
+  </div>
+  <div id="footer">© 2025 MSB Library</div>
+</div></center></body></html>

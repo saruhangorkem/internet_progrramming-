@@ -1,0 +1,14 @@
+<?php
+session_start();
+if(!isset($_SESSION['kullanici_adi']) || $_SESSION['rol']!='uye'){
+    header("Location: login.html");
+    exit;
+}
+?>
+<html>
+<head><title>Kullanıcı Sayfası</title></head>
+<body>
+<h2>Hoşgeldin, <?php echo $_SESSION['kullanici_adi']; ?> (Üye)</h2>
+<p><a href="backend/logout.php">Çıkış Yap</a></p>
+</body>
+</html>

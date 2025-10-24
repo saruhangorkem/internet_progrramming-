@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Kayıt Ol - MSB Library</title>
+  <link rel="stylesheet" href="css/genel.css">
+</head>
+<body class="body">
+<center>
+<div id="container">
+  <h1>Kayıt Ol</h1>
+  <form method="post" action="backend/register.php" style="width:300px;text-align:left;">
+    <label>Kullanıcı Adı:</label><br>
+    <input name="kullanici_adi" required><br><br>
+
+    <label>Şifre:</label><br>
+    <input type="password" name="sifre" required><br><br>
+
+    <label>Rol:</label><br>
+    <select name="rol" required>
+      <option value="uye">Üye</option>
+      <option value="admin">Admin</option>
+    </select><br><br>
+
+    <button type="submit">Kayıt Ol</button>
+  </form>
+  <p><a href="login.html">Giriş sayfasına dön</a></p>
+</div>
+</center>
+</body>
+</html>
