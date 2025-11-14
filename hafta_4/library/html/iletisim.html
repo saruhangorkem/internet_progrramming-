@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Library | İletişim</title>
+  <link rel="stylesheet" href="../css/genel.css">
+  <style>
+    /* Footer'ın alt kısımda kalmasını sağlamak için */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    main {
+      flex: 1;
+    }
+
+    /* Başlık ve Kart Başlıklarına Turuncu Vurgu */
+    .contact-section h2 {
+      color: var(--secondary-accent);
+    }
+    
+    .contact-info h3 {
+      color: var(--secondary-accent);
+      border-left: 4px solid var(--primary); /* Yanına mavi bir çizgi ekleyerek vurguyu artır */
+      padding-left: 10px;
+    }
+    
+    /* Sosyal medya linklerini daha belirgin yap */
+    .contact-info a {
+        font-weight: 600;
+        padding: 4px 8px;
+        border-radius: 4px;
+        background: rgba(0, 123, 255, 0.1);
+    }
+
+    .contact-info a:hover {
+        background: var(--primary);
+        color: var(--text-light);
+        text-decoration: none;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR: Yeni lacivert temayı kullanır -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="../media/logo.png" alt="MSB Library Logo">
+      <h1>The Library</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.php">Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="misyon-vizyon.html">Misyon & Vizyon</a></li>
+        <li><a href="iletisim.html" class="active">İletişim</a></li>
+        <li><a href="../login.php">Giriş</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <section class="contact-section">
+      <h2>İletişim</h2>
+      <p class="intro-text">
+        Bizimle iletişime geçmek için aşağıdaki formu doldurabilir veya doğrudan iletişim bilgilerimizi kullanabilirsiniz.
+      </p>
+
+      <div class="contact-container">
+        <!-- contact-form: genel.css'deki kart ve form stillerini kullanır -->
+        <div class="contact-form">
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="name">Ad Soyad</label>
+              <input type="text" id="name" name="name" placeholder="Adınızı giriniz" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-Posta</label>
+              <input type="email" id="email" name="email" placeholder="E-posta adresiniz" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mesajınız</label>
+              <textarea id="message" name="message" rows="5" placeholder="Mesajınızı yazınız..." required></textarea>
+            </div>
+
+            <!-- Düğme mavi temayı kullanır -->
+            <button type="submit" class="btn">Gönder</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <!-- İletişim Başlıkları Turuncu Vurgu -->
+          <h3>📍 Adres</h3>
+          <p>İstanbul Medeniyet Üniversitesi, Göztepe Kampüsü<br> Kadıköy / İstanbul</p>
+
+          <h3>📞 Telefon</h3>
+          <p>+90 (216) 123 45 67</p>
+
+          <h3>📧 E-Posta</h3>
+          <p>info@msblibrary.edu.tr</p>
+
+          <h3>🌐 Sosyal Medya</h3>
+          <p>
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: Yeni lacivert temayı kullanır -->
+  <footer>
+    <p>© 2025 The Library | İstanbul Medeniyet Üniversitesi</p>
+  </footer>
+</body>
+</html>

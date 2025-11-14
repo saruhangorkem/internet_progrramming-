@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Library | Misyon & Vizyon</title>
+  <link rel="stylesheet" href="../css/genel.css">
+  <style>
+    /* Footer'ın alt kısımda kalmasını sağlamak için */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    main {
+      flex: 1;
+    }
+
+    /* Sayfa başlığına turuncu vurgu */
+    .mission-vision-section h2 {
+      color: var(--secondary-accent);
+    }
+    
+    /* Kart başlıklarına turuncu vurgu */
+    .mv-card h3 {
+      color: var(--secondary-accent);
+    }
+
+    /* MİSYON VURGUSU (GENEL.CSS'deki renkleri eziyoruz) */
+    .mv-card.mission {
+        /* Misyon için daha koyu, sağlam bir mavi/yeşil tonu */
+        border-top: 5px solid #198754; 
+    }
+
+    /* VİZYON VURGUSU (GENEL.CSS'deki renkleri eziyoruz) */
+    .mv-card.vision {
+        /* Vizyon için daha canlı, dinamik bir mavi tonu */
+        border-top: 5px solid var(--primary); 
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR: Yeni lacivert temayı kullanır -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="../media/logo.png" alt="MSB Library Logo">
+      <h1>The Library</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.php">Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="misyon-vizyon.html" class="active">Misyon & Vizyon</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="../login.php">Giriş</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <section class="mission-vision-section">
+      <h2>Misyon & Vizyon</h2>
+      <p class="intro-text">
+        The Library, bilgiye erişimi kolaylaştıran, kullanıcı dostu, çağdaş bir kütüphane otomasyon sistemi sunmayı hedefler.
+      </p>
+
+      <div class="mv-container">
+        <div class="mv-card mission">
+          <h3>🎯 Misyonumuz</h3>
+          <p>
+            Öğrencilerimize ve akademisyenlerimize en kaliteli kaynakları, en hızlı ve güvenilir şekilde ulaştırmak. 
+            Bilgiye erişimi kolay bir ortamda sağlamak ve teknolojiyi eğitimle birleştirerek bilgiye erişim sınırlarını ortadan kaldırmak.
+          </p>
+        </div>
+
+        <div class="mv-card vision">
+          <h3>🌟 Vizyonumuz</h3>
+          <p>
+            Türkiye’nin ve bölgesinin en yenilikçi dijital kütüphanesi olmak. 
+            Bilimsel araştırmaların, dijital dönüşümün ve bilgi paylaşımının öncüsü konumuna gelmek. 
+            Uluslararası standartlarda bir bilgi merkezi oluşturarak geleceğe yön vermek.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: Yeni lacivert temayı kullanır -->
+  <footer>
+    <p>© 2025 The Library | İstanbul Medeniyet Üniversitesi</p>
+  </footer>
+</body>
+</html>
